@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simply recipes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"  />
+
+    <link rel="stylesheet" href="../css/tag.css">
+    <link rel="stylesheet" href="../css/nav-foot.css">
+</head>
+<body>
+
+    <nav class="nav-bar">
+
+        <div class="head">
+            <a href="./index.html" class="logo"><span>Simply</span>Recipes</a>
+            <a href="" class="btn icon"><i class="fa-sharp fa-solid fa-bars"></i>
+            </a>
+        </div>
+        <div class="nav-links">
+        <ul >
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./tag.html">Tags</a></li>
+            <li><a href="./recipes.html">Recipes</a></li>
+            
+        </ul>
+        <div><a class="contact btn" href="./contact.html">Contact</a></div>
+        </div>
+
+    </nav>
+
+      <div class="tag">
+     
+        <a href="./recipes-template.html" class="menu">
+            <h2>Beef</h2>
+            <p>1 recipe</p>
+        </a>
+      
+
+        <a href="./recipes-template.html" class="menu">
+            <h2>Breakfast</h2>
+            <p>2 recipe</p>
+        </a>
+
+        <a href="./recipes-template.html" class="menu">
+            <h2>Carrots</h2>
+            <p>3 recipe</p>
+        </a>
+
+        <a href="./recipes-template.html" class="menu">
+            <h2>Dinner</h2>
+            <p>4 recipe</p>
+        </a>
+
+        <a href="./recipes-template.html" class="menu">
+            <h2>Food</h2>
+            <p>1 recipe</p>
+        </a>
+
+        </div>
+      
+
+        <footer>
+            <p>
+                &copy; 2024 <span>SimplyRecipes</span> Built By <span>Devhan</span>
+            </p>
+        </footer>
+    
+        <script>
+          document.addEventListener('DOMContentLoaded', function () {
+        const icon = document.querySelector('.icon');
+    
+        icon.addEventListener('click', function (e) {
+            e.preventDefault();
+            icon.classList.toggle('show'); 
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('show'); 
+        });
+        window.addEventListener('resize', function() {
+        if (window.innerWidth >= 992) {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.remove('show');
+           
+        }
+    });
+    });
+        </script>
+    
+    </body>
+    
+    </html>

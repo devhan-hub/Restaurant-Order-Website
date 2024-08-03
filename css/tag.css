@@ -1,0 +1,49 @@
+.tag {
+    display: grid;
+    gap: 25px;
+    padding: var(--cnst-pad);
+    margin: var(--cnst-mrg);
+    width: var(--cnst-width);
+    padding-top: 40px;
+}
+
+.tag .menu {
+    background-color: rgb(98, 119, 141);
+    color: white;
+    text-align: center;
+    height: 15vh;
+    border-radius: 5px;
+    transition: background-color 1s ease-out;
+
+}
+
+.tag a:hover {
+    background-color: var(--main-clr);
+}
+
+.menu p {
+    margin: 0;
+
+
+}
+
+.menu h2 {
+    margin: 0;
+    margin-top: 15px;
+
+}
+
+@media (min-width:576px) {
+    .tag {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (min-width:998px) {
+
+    .tag {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(3,1fr);
+    }
+}

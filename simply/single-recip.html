@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simply recipes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="../css/nav-foot.css">
+    <link rel="stylesheet" href="../css/single.css">
+</head>
+
+<body>
+
+    <nav class="nav-bar">
+
+        <div class="head">
+            <a href="./index.html" class="logo"><span>Simply</span>Recipes</a>
+            <a href="" class="btn icon"><i class="fa-sharp fa-solid fa-bars"></i>
+            </a>
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./tag.html">Tags</a></li>
+                <li><a href="./recipes.html">Recipes</a></li>
+
+            </ul>
+            <div><a class="contact btn" href="./contact.html">Contact</a></div>
+        </div>
+        </div>
+    </nav>
+
+    <section class="img-text">
+        <img src="../img/recipe-4.jpeg" alt="">
+
+        <div class="main-part">
+            <div class="text">
+                <h1>Banana Pancakes</h1>
+                <p>Shabby chic humblebrag banh mi bushwick, banjo kale chips meggings. Cred selfies sartorial, cloud
+                    bread disrupt blue bottle seitan. Dreamcatcher tousled bitters, health goth vegan venmo whatever
+                    street art lyft shabby chic pitchfork beard. Drinking vinegar poke tbh, iPhone coloring book
+                    polaroid truffaut tousled ramps pug trust fund letterpress. Portland four loko austin chicharrones
+                    bitters single-origin coffee. Leggings letterpress occupy pour-over</p>
+            </div>
+            <div class="time-main">
+                <div class="each-time">
+                    <i class="fa-sharp fa-solid fa-clock"></i>
+                    <p class="text">prep time</p>
+                    <p class="min">30 min.</p>
+                </div>
+
+                <div class="each-time">
+                    <i class="fa-sharp fa-regular fa-clock"></i>
+                    <p class="text">cook time</p>
+                    <p class="min">15 min.</p>
+                </div>
+
+                <div class="each-time">
+                    <i class="fa-duotone fa-solid fa-users"></i>
+                    <p class="text">serving</p>
+                    <p class="min">6 servings</p>
+                </div>
+            </div>
+            <div class="tag">
+                <p>Tags: </p>
+                <a href="">Beef</a>
+                <a href="">Breakfast</a>
+                <a href="">Pancakes</a>
+                <a href="">Food</a>
+            </div>
+        </div>
+        </section>
+
+        <section class="all-insta">
+            <div class="instructions">
+                <h2>instructions</h2>
+                <div class="each">
+                <span>step 1</span> 
+                <p class="han">I'm baby mustache man braid fingerstache small batch venmo succulents
+                    shoreditch.
+                </p>
+            </div>
+            <div class="each">
+                <span>step 1</span> 
+                <p> Pabst pitchfork you probably haven't heard of them, asymmetrical seitan tousled
+                    succulents wolf banh
+                    mi man bun bespoke selfies freegan ethical hexago
+                </p>
+                </div>
+                <div class="each">
+                <span>step 3</span>
+                <p>  Polaroid iPhone bitters chambray. Cornhole swag kombucha live-edge.
+
+                </p>
+            </div>
+
+            </div>
+
+            <div class="ing-tool">
+                <div class="ingridint">
+                    <h2>Ingredients</h2>
+                    <p>1 1/2 cups dry pancake mix</p>
+                    <p>1/2 cup flax seed meal</p>
+                    <p>1 cup skim milk</p>
+                </div>
+                <div class="tool">
+                    <h2>Tools</h2>
+                    <p>Hand Blender</p>
+                    <p>Large Heavy Pot With Lid</p>
+                    <p>Measuring Spoons</p>
+                    <p>Measuring Cups</p>
+                </div>
+            </div>
+        </section>
+    
+        <footer>
+            <p>
+                &copy; 2024 <span>SimplyRecipes</span> Built By <span>Devhan</span>
+            </p>
+        </footer>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const icon = document.querySelector('.icon');
+
+                icon.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    icon.classList.toggle('show');
+                    const navLinks = document.querySelector('.nav-links');
+                    navLinks.classList.toggle('show');
+                });
+                window.addEventListener('resize', function () {
+                    if (window.innerWidth >= 992) {
+                        const navLinks = document.querySelector('.nav-links');
+                        navLinks.classList.remove('show');
+
+                    }
+                });
+            });
+        </script>
+
+</body>
+
+</html>

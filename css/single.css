@@ -1,0 +1,187 @@
+.img-text,
+.all-insta {
+
+    width: 92%;
+    margin: 50px auto;
+}
+
+.img-text img {
+    height: 65vh;
+    border-radius: 5px;
+}
+
+.main-part .text {
+    display: flex;
+    flex-direction: column;
+}
+
+.text h1 {
+    margin: 40px 0 30px 0;
+    font-size: 2.8em;
+    font-weight: 500;
+}
+
+.text p {
+    font-size: 1.1em;
+    line-height: 1.6em;
+    color: #454444;
+    margin-top: 0;
+
+}
+
+.main-part .time-main {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 5px;
+    text-align: center;
+    color: #444;
+}
+
+.each-time i {
+    font-size: 1.4em;
+    color: #4b41f9;
+}
+
+.tag {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    font-weight: 500;
+}
+
+.tag a {
+    background-color: #645de5;
+    color: white;
+    border-radius: 5px;
+    padding: 3px 12px;
+    font-size: 0.8em;
+}
+
+.instructions {
+    margin-top: 60px;
+}
+
+.instructions h2 {
+    font-size: 1.8em;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.each p {
+
+    max-width: 700px;
+    font-size: 1.1em;
+    line-height: 1.6em;
+    padding: 0;
+    margin: 5px 0 30px 0;
+}
+
+.each span {
+    font-size: 1.1em;
+    color: #4b41f9;
+    font-weight: 550;
+    text-transform: uppercase;
+}
+
+.each span::after {
+    display: inline-block;
+    content: "";
+    border-top: 2px solid lightgray;
+    width: 84%;
+    margin-left: 20px;
+    height: 2px;
+}
+
+.ingridint {
+    margin-top: 60px;
+    max-width: 630px;
+    width: 100%;
+}
+
+.ingridint h2 {
+    font-size: 1.7em;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.ingridint p {
+    padding-bottom: 15px;
+    border-bottom: 2px solid lightgray;
+    margin-bottom: 30px;
+    font-size: 1.1em;
+    color: #444;
+}
+
+.tool {
+    margin-top: 60px;
+    max-width: 630px;
+    width: 100%;
+}
+
+.tool h2 {
+    font-size: 1.7em;
+    font-weight: 300;
+}
+
+.tool p {
+    padding-bottom: 15px;
+    border-bottom: 2px solid lightgray;
+    margin-bottom: 30px;
+    font-size: 1.1em;
+    color: #645de5;
+
+}
+
+@media (min-width:992px) {
+
+    .img-text {
+        display: flex;
+        gap: 50px;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .all-insta {
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+        align-items: flex-start;
+
+    }
+
+    .ingridint {
+        margin-top: 0;
+    }
+
+    .instructions {
+        max-width: 60%;
+        margin: 0;
+    }
+
+
+    .ing-tool {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .tool {
+        margin: 0;
+    }
+
+    .img-text img {
+        width: 40%;
+    }
+
+    .main-part {
+        width: 60%;
+    }
+
+}

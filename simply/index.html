@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simply recipes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="../css/nav-foot.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+    <nav class="nav-bar">
+
+        <div class="head">
+            <a href="./index.html" class="logo"><span>Simply</span>Recipes</a>
+            <a href="" class="btn icon"><i class="fa-sharp fa-solid fa-bars"></i>
+            </a>
+        </div>
+
+        <div class="nav-links">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./tag.html">Tags</a></li>
+                <li><a href="./recipes.html">Recipes</a></li>
+            </ul>
+
+            <div><a class="contact btn" href="./contact.html">Contact</a></div>
+        </div>
+
+    </nav>
+
+    <section class="landing">
+        <div class="inner-box">
+            <div class="inner">
+                <h1>simply recipes</h1>
+                <p>no fluff, just recipes</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="main">
+
+        <div class="container-img">
+
+            <a href="./single-recip.html">
+                <img src="../img/recipe-1.jpeg" alt="">
+                <h3>Carne Asada</h3>
+                <p>Prep: 15min | Cook : 5min</p>
+            </a>
+
+            <a href="./single-recip.html">
+                <img src="../img/recipe-2.jpeg" alt="">
+                <h3> Greek Ribs</h3>
+                <p>Prep : 15min | Cook : 5min</p>
+            </a>
+
+            <a href="./single-recip.html">
+                <img src="../img/recipe-3.jpeg" alt="">
+
+                <h3>Vegitable Soap</h3>
+                <p>Prep : 15min | Cook : 5min</p>
+            </a>
+
+            <a href="./single-recip.html">
+                <img src="../img/recipe-4.jpeg" alt="">
+                <h3>Banana Pancakes</h3>
+                <p>Prep : 15min | Cook : 5min</p>
+            </a>
+        </div>
+
+        <div class="Recipes">
+            <h4>Recipes</h4>
+            <div class="link">
+                <a href="./recipes-template.html">Beef (1)</a>
+                <a href="./recipes-template.html">Breakfast (2)</a>
+                <a href="./recipes-template.html">Carrots (3)</a>
+                <a href="./recipes-template.html">Food (4)</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>
+            &copy; 2024 <span>SimplyRecipes</span> Built By <span>Devhan</span>
+        </p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const icon = document.querySelector('.icon');
+
+            icon.addEventListener('click', function (e) {
+                e.preventDefault();
+                icon.classList.toggle('show');
+                const navLinks = document.querySelector('.nav-links');
+                navLinks.classList.toggle('show');
+            });
+            window.addEventListener('resize', function () {
+                if (window.innerWidth >= 992) {
+                    const navLinks = document.querySelector('.nav-links');
+                    navLinks.classList.remove('show');
+
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
